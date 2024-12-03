@@ -5,9 +5,9 @@ class Query
 
     public function __construct()
     {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
+        $servername = "nnpcserver.mysql.database.azure.com";
+        $username = "nnpc";
+        $password = "Password@123";
         $dbname = "english";
 
         $this->conn = new mysqli($servername, $username, $password, $dbname);
