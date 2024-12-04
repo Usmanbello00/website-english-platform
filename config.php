@@ -5,8 +5,8 @@ class Query
 
     public function __construct()
     {
-        $servername = "nnpcserver.mysql.database.azure.com";
-        $username = "nnpc";
+        $servername = "musicals.mysql.database.azure.com";
+        $username = "value";
         $password = "Password@123";
         $dbname = "english";
 
