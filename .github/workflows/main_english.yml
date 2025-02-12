@@ -27,6 +27,9 @@ jobs:
         with:
           files: 'composer.json'
 
+      - name: Install the SDK via Composer
+        run: composer require microsoft/application-insights
+
       - name: Run composer install if composer.json exists
         if: steps.check_files.outputs.files_exists == 'true'
         run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
